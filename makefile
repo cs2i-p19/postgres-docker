@@ -17,11 +17,11 @@ downwipe:
 
 shell:
 	# Connect to first PostgreSQL container
-	@docker compose exec db bash
+	@docker compose exec db1 bash
 
 psql:
 	# Start PostgreSQL command line inside first container
-	@docker compose exec db psql -h db -U postgres
+	@docker compose exec db1 psql -h db1 -U postgres
 
 info:
 	@echo CONFIGURATION
