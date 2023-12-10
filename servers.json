@@ -1,0 +1,22 @@
+{
+    "Servers": {
+        "1": {
+            "Name": "PostgreSQL #1 on Docker",
+            "Group": "Servers",
+            "Port": 5432,
+            "Username": "postgres",
+            "Host": "db1",
+            "SSLMode": "prefer",
+            "MaintenanceDB": "postgres"
+        },
+        "2": {
+            "Name": "PostgreSQL #2 on Docker",
+            "Group": "Servers",
+            "Port": 5432,
+            "Username": "postgres",
+            "Host": "db2",
+            "SSLMode": "prefer",
+            "MaintenanceDB": "postgres"
+        }
+    }
+}
