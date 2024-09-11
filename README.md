@@ -23,7 +23,11 @@ make down
 ## Other commands
 
 ```bash
+# Restart containers
+make restart
+
 # Stop containers and remove related volumes
+# Warning: all data will be lost!
 make downwipe
 
 # Configuration info

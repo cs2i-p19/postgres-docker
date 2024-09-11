@@ -11,6 +11,10 @@ down:
 	# Stop containers
 	@docker compose down
 
+restart:
+	# Restart containers
+	@docker compose restart
+
 downwipe:
 	# Stop containers and delete volumes
 	@docker compose down -v

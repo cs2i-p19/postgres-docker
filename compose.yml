@@ -1,9 +1,9 @@
-version: '3.3'
-
 # ==============================
 # SERVICES
 # ==============================
+
 services:
+
   # ------------------------------
   # Postgres container 1
   # ------------------------------
@@ -11,7 +11,7 @@ services:
     image: ${POSTGRES_IMAGE}
     restart: always
     ports: 
-      # PG post is exposed so that we can connect
+      # PG port is exposed so that we can connect
       # to PG from outside through localhost:5432
       - "${POSTGRES_PUBLIC_PORT}:5432"
     volumes:
@@ -26,7 +26,7 @@ services:
     image: ${POSTGRES_IMAGE}
     restart: always
     ports: 
-      # PG post is exposed so that we can connect
+      # PG port is exposed so that we can connect
       # to PG from outside through localhost:5432
       - "${POSTGRES_PUBLIC_PORT2}:5432"    
     volumes:
